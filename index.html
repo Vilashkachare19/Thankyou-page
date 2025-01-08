@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <style>
+    /* General Reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Full Page Styling */
+    body {
+      background-color: white; /* White background */
+      color: crimson; /* Crimson text */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    /* Responsive Typography */
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    /* Add subtle animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    h1, p {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Thank You!</h1>
+    <p>Your submission has been received.</p>
+  </div>
+
+  <script>
+    // Redirect to index.html after 4 seconds
+    setTimeout(() => {
+      window.location.href = "index.html"; // Replace with your index page's URL or path
+    }, 4000);
+  </script>
+</body>
+</html>
